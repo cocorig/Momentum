@@ -46,7 +46,9 @@ if (hours >= 6 && hours <= 11) {
    img.src = `img/${srcIdx}`
 
   } else {
+   
     const srcIdx = Night[Math.floor(Math.random() * Night.length)];
+    console.log(srcIdx)
     img.src = `img/${srcIdx}`
   
   }
