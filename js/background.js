@@ -33,21 +33,21 @@ const img =  document.createElement('img');
 
 if (hours >= 6 && hours <= 11) {
     const srcIdx =Morning[Math.floor(Math.random() * Morning.length)];
-    img.src = `./img/${srcIdx}`
+    img.src = `img/${srcIdx}`
    
 
   } else if (hours >= 12 && hours <= 17) {
     const srcIdx = Afternoon[Math.floor(Math.random() * Afternoon.length)];
-    img.src = `./img/${srcIdx}`
+    img.src = `img/${srcIdx}`
   
 
   } else if (hours >= 18 && hours <= 21) {
     const srcIdx =Evening[Math.floor(Math.random() * Evening.length)];
-    body.style.backgroundImage = `url(./img/${srcIdx})`;
+    body.style.backgroundImage = `url(img/${srcIdx})`;
 
   } else {
     const srcIdx = Night[Math.floor(Math.random() * Night.length)];
-    body.style.backgroundImage = `url(./img/${srcIdx})`;
+    body.style.backgroundImage = `url(img/${srcIdx})`;
   
   }
   
