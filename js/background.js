@@ -43,11 +43,11 @@ if (hours >= 6 && hours <= 11) {
 
   } else if (hours >= 18 && hours <= 21) {
     const srcIdx =Evening[Math.floor(Math.random() * Evening.length)];
-    body.style.backgroundImage = `url(img/${srcIdx})`;
+   img.src = `img/${srcIdx}`
 
   } else {
     const srcIdx = Night[Math.floor(Math.random() * Night.length)];
-    body.style.backgroundImage = `url(img/${srcIdx})`;
+    img.src = `img/${srcIdx}`
   
   }
   
