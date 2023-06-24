@@ -17,7 +17,7 @@ img {
     left:0;
     z-index: -1;  
     filter: brightness(70%);
-    background: center no-repeat;
+    background-size: cover;
 
 }
 
@@ -74,6 +74,7 @@ button{
     all: unset;
     color: antiquewhite;
     font-size: 20px;
+    cursor: pointer;
 }
 button i{
    
@@ -132,3 +133,113 @@ input::placeholder {
 .hidden {
     display: none;
 }
+
+
+@media screen and (max-width: 480px) {
+   
+    section{
+        padding: 3rem;
+    }
+   
+    
+    #clock {
+      font-size: 4rem;
+      
+    }
+    
+    #greeting {
+      font-size: 2.5rem;
+     
+    }
+    
+
+
+    
+    #todo-list li {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    
+    #todo-list span {
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    
+    .toggle {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+    
+    button {
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      all: unset;
+      color: antiquewhite;
+      font-size: 18px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    button i {
+      cursor: pointer;
+    }
+    
+    button i:hover {
+      opacity: 0.5;
+    }
+    
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border-bottom: 1px solid antiquewhite;
+      cursor: pointer;
+      font-size: 2rem;
+      color: aliceblue;
+    }
+    
+    input::placeholder {
+      color: rgb(221, 217, 210);
+      font-style: italic;
+      font-size: 18px;
+      opacity: 0.7;
+    }
+    
+    /* quote */
+    #quote {
+      position: relative;
+      display: flex;
+      margin-top: 3rem;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      color: antiquewhite;
+      width: 100%;
+      font-style: italic;
+      text-align: center;
+    }
+    
+    /* weather */
+    #weather {
+     font-size: 13px;
+    }
+    
+    /* data */
+    #Data {
+     font-size: 13px
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+
+
+
+  }
+  
