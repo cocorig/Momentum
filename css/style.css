@@ -137,11 +137,12 @@ input::placeholder {
 
 @media screen and (max-width: 480px) {
    
-    section{
-        padding: 3rem;
+    
+    body {
+      margin: 0;
+      padding: 0;
     }
    
-    
     #clock {
       font-size: 4rem;
       
